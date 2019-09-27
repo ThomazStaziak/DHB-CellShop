@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark mb-5" style="background-color: #414f57">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo.png" height="50" alt="logo celular" />
+        <span class="mx-2">CellShop Community</span>
+      </a>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 col-md-4 border-right">
+          <form action="">
+            <h3>Anúncie seu produto</h3>
+            <div class="form-group">
+              <label for="nome">Nome do produto</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                class="form-control"
+                placeholder="Nome do produto"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="descricao">Descrição</label>
+              <input
+                type="text"
+                name="descricao"
+                id="descricao"
+                class="form-control"
+                placeholder="Descrição"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="valor">Valor</label>
+              <input
+                type="number"
+                name="valor"
+                id="valor"
+                class="form-control"
+                placeholder="Valor"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="foto" class="btn btn-info col-12"
+                >Selecione imagem do produto</label
+              >
+              <input
+                type="file"
+                class="d-none"
+                name="foto"
+                id="foto"
+                placeholder="Imagem do Produto"
+              />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success col-12">Adicionar Produto</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6 col-md-8">
+          <div id="produtos-container" class="row"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
