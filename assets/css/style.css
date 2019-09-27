@@ -1,0 +1,12 @@
+div.card.border {
+  transition: all 0.5s;
+}
+
+div.card.border:hover {
+  box-shadow: 2px 2px 4px 2px #ccc;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
